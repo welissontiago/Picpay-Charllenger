@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: desafio-picpay
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/picpay?useTimezone=true&serverTimezone=UTC
+    username: ${JDBC_USERNAME_LOCALHOST}
+    password: ${JDBC_PASSWORD_LOCALHOST}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+    show-sql: false
